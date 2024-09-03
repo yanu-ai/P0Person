@@ -15,6 +15,16 @@ For this project and every APT quiz, you will record your screen via Zoom. For A
 * To learn about CompSci201 workflow for assignments: Git, Gradescope, helper hours.
 * To learn about the difference between static and dynamic data sources, e.g., a file on your laptop and data accessible via a URL that can be updated by those in Compsci201
 
+## Initial Engagement Points
+
+You can earn four engagement points for this project.
+
+* Answer the questions on the [pre-project engagement form](https://bit.ly/p0-pre-engage)
+* Modify the definition of `Person p` in the file `PostPerson.java` to represent you, and run the program to post the information for the class to use.
+
+For the second engagement. You should use the latitude and longitude of what you consider either your hometown or where you last went to high school. You can use your name or you can use a pseudonym. For the final parameter, you should use the name of your favorite 9th street eatery. It must be a restaurant from the following list.
+
+"Juju", "Lime and Lemon", "Dain's Place", "Banh's Cuisine", "Blue Corn Cafe", "Monuts", "Alpaca", "Kiichi Ramen", "Bali Hai Mongolian Grill", "Burger Bach", "Vin Rouge", "Devil's Pizzeria", "The Loop", "Elmo's Diner", "Local 22", "Parizade", "Metro 8 Steakhouse", "Common Market", "Cosmic Cantina", "Happy + Hale", "International Delights", "Play Bowls", "Szechuan Mansion Hotpot", "Panera", "Zenfish Poke Bar", "Chicken Bee", "Mad Hatter Cafe", "Genji", "Jimmy John's", "Heavenly Buffaloes", "The Tavern", "Guasaca", "Shuckin' Shack"
 
 ## Developing the classes in Project P0: Person201
 

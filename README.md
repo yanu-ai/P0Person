@@ -5,11 +5,12 @@
 For details and FAQs, see [this _details_ document](docs/details.md) that has information on git, Java, the classes here, and more. This current file you're reading has project and coding details, but the linked document has more Java and git details, particularly about starting to code. That linked document includes information about project workflow including submitting code and analysis for grading via _Gradescope_. **Be sure to check [the _detail_ document](https://coursework.cs.duke.edu/201fall24/resources-201/-/blob/main/projectWorkflow.md) for how to use Git to obtain the project files, and workarounds if Git doesn't work yet for you. You'll need to refer to this P0 document when forking and cloning.**
 
 ## Recording on Zoom
-For this project and every APT quiz, we ask that record your screen via Zoom. For APT quizzes, you will record for the full duration of the quiz, but for this project, you will only record **the first 20 minutes when you start coding** -- not when you start reading, but when you're ready to code. You'll submit a URL for a cloud Zoom recording [using the link https://duke.is/zoom-p0-fall24]https://duke.is/zoom-p0-fall24).
+
+For this project and every APT quiz, we ask that record your screen via Zoom. For APT quizzes, you will record for the full duration of the quiz, but for this project, you will only record **the first 20 minutes when you start coding** -- not when you start reading, but when you're ready to code. You'll submit a URL for a cloud Zoom recording [using the link https://duke.is/zoom-p0-fall24](https://duke.is/zoom-p0-fall24).
 
 ## Goals
 
-* To modify a simple Java record/class, modify two driver programs, and create a new class to demonstrate understanding of classes, methods, and instance variables.
+* To modify a simple Java record/class, modify two driver programs, and create a new class to demonstrate understanding of records, classes, methods, and instance variables.
 * To learn about running Java programs using the VSCode IDE
 * To learn about using Git for project management.
 * To learn about CompSci201 workflow for assignments: Git, Gradescope, helper hours.
@@ -98,6 +99,20 @@ public static void main(String[] args) throws Exception {
 ```
 See [the details](docs/details.md) documentation for details/hints.
 
+### Modifying the code in `CountEateries.java`
+
+The code you download includes a class `CountEateries` that reads a file of data, e.g., `data/foodlarge.txt` and determines how many `Person201` objects like each of the 33 different Ninth Street eateries. When run, this count is printed as zero/0 for each eatery until you modify/add to the code in method `countEateries` which returns zero for every value of parameter `eatery`. You'll need to write code to count how many `Person201` objects, say named `p`, in the array parameter `people` have `p.eatery() == eatery`. Write code by looping over the array and checking every object's `.eatery()` value for equality with parameter `eatery`. Copy/paste the output you get into your **analysis questions** document.
+
+The last several lines of eatery data should be:
+```
+3:	The Loop
+2:	The Tavern
+6:	Vin Rouge
+4:	Zenfish Poke Bar
+--------
+total = 97
+```
+
 ## Checklist
 
 Before you submit to Gradescope, check that you've done each of the following:
@@ -107,6 +122,7 @@ Before you submit to Gradescope, check that you've done each of the following:
 - Add a new `Person201` object in the `Person201Demo.java` program and verify that running `Person201Demo.java` matches the expected output.
 - Run `Person201Nearby.java` , find threshold values as indicated, and verify that reading a file and the corresponding URL produce the same results.
 - Create a new class `Person201Farthest` (in a new file named accordingly) with a `main` method to find the two distinct (i.e., inequal) people furthest apart from each other.
+- Modify method `countEateries` in class `CountEateries` so it finds data appropriately.
 
 ## Submission
 
@@ -114,26 +130,28 @@ You'll submit by pushing your code to Git and using Gradescope. Details can be f
 
 ## Analysis
 
-Answer all the questions here. As outlined in [this document](docs/details.md) you'll submit a PDF with your answers to Gradescope.
+Answer all the questions here. As outlined in [this document](docs/details.md) you'll submit a PDF with your answers to Gradescope as a separate assignment.
 
 ### Question 1
-- How many instance variables are there in `Person201`?
-- How many constructors are there in `Person201`?
+- How many instance variables are there in the record `Person201` (you may need to infer this)?
+- How many constructors are there in `Person201` after it has been modified?
 
 ### Question 2
-- Does the main method of your `Person201Closest.java` create any objects of type `Person201Utilities`? Why or why not?
+- Does the main method of your `Person201Farthest.java` create any objects of type `Person201Utilities`? Why or why not?
 
 ### Question 3
-According to the `.equals` method of the `Person201` class, when are two `Person201` objects considered to be equal? Is it case sensitive for their names or for their phrases? (Case sensitive means different answers are returned depending on capitalization).
+
+What is the smallest value of variable `threshold` in `Person201Nearby` that yields exactly three people near to Ricardo. Write a few sentences about how you found the value, essentially providing an algorithm for anyone to replicate your work so that with a different/new data file they could find the smallest such value **efficiently**.
+
 
 ### Question 4
-The online data for this project read via URL is encrypted. In a few sentences, why is it reasonable to have the online data encrypted?
+The online data for this project read via URL is **not encrypted**. In a few sentences, why would it be reasonable to have the online data encrypted?
 
 ### Question 5
-Read/skim [this description of AES](https://techjury.net/blog/what-is-aes/), the encryption algorithm used in this project, e.g., see the code in `FileEncryptor.java`. What are two things you learned from this article that you think are relevant to your understanding of Computer Science?
+
 
 ### Question 6
-As stated at the start of this document and in the course policies, you should record via Zoom the first 20 minutes of you working at the beginning of this project and submit a link to that recording using [this form](https://duke.is/y/yfcv). In your analysis document, include as an answer to Question 6 an affirmation "Yes, I submitted the URL for a Zoom recording." -- if, in fact, you did.
+As stated at the start of this document and in the course policies, you should record via Zoom the first 20 minutes of you working at the beginning of this project and submit a link to that recording using [the link https://duke.is/zoom-p0-fall24](https://duke.is/zoom-p0-fall24). In your analysis document, include as an answer to this last question an affirmation "Yes, I submitted the URL for a Zoom recording." -- if, in fact, you did. Otherwise indicate you forgot to/refused to.
 
 ## Grading
 

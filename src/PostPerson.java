@@ -49,8 +49,7 @@ public class PostPerson {
     public static void main(String[] args) {
         PostPerson pp = new PostPerson();
 
-        Person201 p = new Person201("Renee",-22.908,43.179,"Monuts");
-        p = new Person201("Desmond",-33.55,-18.25,"Elmo's Diner");
+        Person201 p = new Person201("Sven",77.87,-20.975,"Cosmic Cantina");
         pp.postJson(URL,p);
     }
 }

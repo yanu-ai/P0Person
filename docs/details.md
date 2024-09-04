@@ -15,17 +15,17 @@ When you fork and clone the project, **make sure you open the correct project fo
 
 You will be working primarily with the `.java` files in the `src` folder beginning with `Person201.java`. You will modify two programs/classes (`Person201.java`,  `Person201Demo.java`), and will run `Person201Nearby.java` to see if your changes are working. Then you will create a new program called `Person201Farthest.java`.
 
-Take a careful look at the main method you ran in `Person201Demo`. Note that it creates `Person201` **objects**. Those are defined in the `Person201.java` file using a **record**, rather than a **class**. When you run the program `Person201Nearby` you  can  see that it reads data about persons from a file by calling the static `readFile` method defined in `Person201Utilities.java`. The particular file, `data/foodlarge.txt`, contains data about some made-up people; the file is in the `data` folder of your project and you can view it directly in Visual Studio Code.
+Take a careful look at the main method you ran in `Person201Demo`. Note that it creates `Person201` **objects**. Those are defined in the `Person201.java` file using a class. When you run the program `Person201Nearby` you  can  see that it reads data about persons from a file by calling the static `readFile` method defined in `Person201Utilities.java`. The particular file, `data/foodlarge.txt`, contains data about some made-up people; the file is in the `data` folder of your project and you can view it directly in Visual Studio Code.
 
-The main method you ran from `Person201Nearby` defines a query person and then search for all other persons in the provided data file `foodlarge.txt` that are _nearby_ to the query person, and print those people to the screen. 
+The main method you ran from `Person201Nearby` defines a query person and then searches for all other persons in the provided data file `foodlarge.txt` that are _nearby_ to the query person, and print those people to the screen. 
 
 ### Fix Person201
 
-Take a look at the `Person201.java` file. This is the Java record that defines `Person201` objects. In a Java `record`, instance variables are defined automatically by the variables specified in the `record` declaration/definition. So in this record you'll see four instance variables with identifiers `name`, `latitude`, `longitude`, and `eatery`. In the file `Person.java` you'll see what a Java class would look like with these instance variables explicitly declared at the beginning of the class definition with identifiers `myName`, `myLatitude`, `myLongitude`, and `myEatery`. The constructorin the `Person` class then assigns values to these instance variables explicitly. In a Java record, that assignmwent happens automatically. 
+Take a look at the `Person201.java` file. This is the Java class that defines `Person201` objects. In a Java `class` instance variables are defined as private by convention. In this class you'll see four instance variables with identifiers `name`, `latitude`, `longitude`, and `eatery`.
 
-Note the **instance variables** defined first outside of any methods in the `Person` class - every `Person` object has a value for each of these that can be accessed with the `.` operator. In the `Person201` record, the four instance variables are named explicitly in the record constructor. Both the class and the record have a `toString` method, though the one in the record `Person201` includes more stylistic information, e.g., using "S" for south and "N" for north.
+In the `Person201` class, the four instance variables are named explicitly in the constructor. The use of `this.latitude` means the instance variable as opposed to `latitude` which means the parameter to the constructor.
 
-You will need to add a default/no-parameter constructor to the `Person201` record. Based on the instructions, the body of this constructor will be
+You will need to add a default/no-parameter constructor to the `Person201` class. Based on the instructions, the body of this constructor will be as shown below. The use of `this(x,y,z,w)` is an implicit call of the constructor for `Person201` that has parameters.
 ```
     this("Owen", 35.99, 79.9, "Dain's Place");
 ```

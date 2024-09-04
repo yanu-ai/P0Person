@@ -4,6 +4,8 @@ the [directions for installation here](https://coursework.cs.duke.edu/201fall24/
 
 We'll be using Git and the installation of GitLab at [coursework.cs.duke.edu](https://coursework.cs.duke.edu). All code for classwork will be kept here. Git is software used for version control, and GitLab is an online repository to store code in the cloud using Git.
 
+For this project, you **start with the URL linked to course calendar**, [https://coursework.cs.duke.edu/201fall24/p0-person201-fall2024](https://coursework.cs.duke.edu/201fall24/p0-person201-fall2024).
+
 **[This document details the workflow](https://coursework.cs.duke.edu/201fall24/resources-201/-/blob/main/projectWorkflow.md) for downloading the starter code for the project, updating your code on coursework using Git, and ultimately submitting to Gradescope for autograding.** We recommend that you read and follow the directions carefully this first time working on a project! While coding, we recommend that you periodically (perhaps when completing a method or small section) push your changes as explained in Section 5.
 
 

@@ -4,11 +4,45 @@
  * To be modified by students in 201, when you make
  * a modification, add yourself as an author in these
  * comments.
- * @version 3.0, Fall 2024, Changed from Class to Record
- * also changed phrase to eatery
+ * @version 3.0, Fall 2024, changed getters
+ * to mirror record getters and phrase to eatery
  *
  */
-public record Person201(String name, double latitude, double longitude, String eatery) {
+public class Person201 {
+    private String name;
+    private double latitude;
+    private double longitude;
+    private String eatery;
+
+    public Person201(String name, double latitude, double longitude, String eatery) {
+        this.name = name;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.eatery = eatery;
+    }
+
+    // getters
+    public String name(){
+        return name;
+    }
+    public double latitude(){
+        return latitude;
+    }
+    public double longitude(){
+        return longitude;
+    }
+    public String eatery(){
+        return eatery;
+    }
+
+    @Override
+    public boolean equals(Object o){
+        Person201 other = (Person201) o;
+        return name().equals(other.name()) &&
+               latitude() == other.latitude() &&
+               longitude() == other.longitude() &&
+               eatery().equals(other.eatery());
+    }
 
     /**
      * Returns String using E/W for longitude, N/S for latitude
@@ -37,4 +71,3 @@ public record Person201(String name, double latitude, double longitude, String e
         System.out.println(p);
     }
 }
-

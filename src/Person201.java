@@ -9,10 +9,10 @@
  *
  */
 public class Person201 {
-    private String name;
-    private double latitude;
-    private double longitude;
-    private String eatery;
+    private String name;      // name of person
+    private double latitude;  // N is +, S is -
+    private double longitude; // W is -, E is +
+    private String eatery;    // on ninth street
 
     public Person201(String name, double latitude, double longitude, String eatery) {
         this.name = name;

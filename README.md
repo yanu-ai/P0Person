@@ -10,7 +10,7 @@ For this project and every APT quiz, we ask that record your screen via Zoom. Fo
 
 ## Goals
 
-* To modify a simple Java record/class, modify two driver programs, and create a new class to demonstrate understanding of records, classes, methods, and instance variables.
+* To modify a simple Java class, modify two driver programs, and create a new class to demonstrate understanding of records, classes, methods, and instance variables.
 * To learn about running Java programs using the VSCode IDE
 * To learn about using Git for project management.
 * To learn about CompSci201 workflow for assignments: Git, Gradescope, helper hours.
@@ -54,12 +54,12 @@ names: claire ricardo Owen
 Sam to Fred distance = 424.611
 ```
 
-Now that you've done this, make an additional change to the `main` method in file `Person201Demo.java` by creating a new `Person201` variable named `s` (short for Sam) as follows:
+Now that you've done this, make an additional change to the `main` method in file `Person201Demo.java` by creating a new `Person201` variable named `s` as follows:
 
 `Person201 s = new Person201("Ethan", 40.6782, 73.0442, "Monuts");`
 
 Next, change the definition of the array `people` to include `s` such that `s` appears after `c`, e.g., 
-`Person201[] datas = {a,b,c,s}`. Run the program,  the output should be as shown here:
+`Person201[] datas = {a,b,c,s}`. Run the program,  the output should be as shown here (note `c` still using default constructor):
 
 ```
 (037.80N,122.27W) claire, "Blue Corn Cafe"
@@ -101,7 +101,7 @@ See [the details](docs/details.md) documentation for details/hints.
 
 ### Modifying the code in `CountEateries.java`
 
-The code you download includes a class `CountEateries` that reads a file of data, e.g., `data/foodlarge.txt` and determines how many `Person201` objects like each of the 33 different Ninth Street eateries. When run, this count is printed as zero/0 for each eatery until you modify/add to the code in method `countEateries` which returns zero for every value of parameter `eatery`. You'll need to write code to count how many `Person201` objects, say named `p`, in the array parameter `people` have `p.eatery() == eatery`. Write code by looping over the array and checking every object's `.eatery()` value for equality with parameter `eatery`. Copy/paste the output you get into your **analysis questions** document.
+The code you download includes a class `CountEateries` that reads a file of data, e.g., `data/foodlarge.txt` and determines how many `Person201` objects like each of the 33 different Ninth Street eateries. When run, this count is printed as zero/0 for each eatery until you modify/add to the code in method `countEateries` which returns zero for every value of parameter `eatery`. You'll need to write code to count how many `Person201` objects, say named `p`, in the array parameter `people` have `p.eatery().equals(eatery)`. Write code by looping over the array and checking every object's `.eatery()` value for equality with parameter `eatery`. Copy/paste the output you get into your **analysis questions** document.
 
 The last several lines of eatery data should be:
 ```
@@ -132,25 +132,25 @@ You'll submit by pushing your code to Git and using Gradescope. Details can be f
 
 Answer all the questions here. As outlined in [this document](docs/details.md) you'll submit a PDF with your answers to Gradescope as a separate assignment.
 
-### Question 1
-- How many instance variables are there in the record `Person201` (you may need to infer this)?
+### Question 1 (1 point)
+- How many instance variables are there in the class `Person201`?
 - How many constructors are there in `Person201` after it has been modified?
 
-### Question 2
+### Question 2 (1 point)
 - Does the main method of your `Person201Farthest.java` create any objects of type `Person201Utilities`? Why or why not?
 
-### Question 3
+### Question 3 (2 points)
 
 What is the smallest value of variable `threshold` in `Person201Nearby` that yields exactly three people near to Ricardo. Write a few sentences about how you found the value, essentially providing an algorithm for anyone to replicate your work so that with a different/new data file they could find the smallest such value **efficiently**.
 
 
-### Question 4
+### Question 4 (2 points)
 The online data for this project read via URL is **not encrypted**. In a few sentences, why would it be reasonable to have the online data encrypted?
 
-### Question 5
+### Question 5 (1 point)
+According to the `.equals` method of the `Person201` class, when are two `Person201` objects considered to be equal? Is it case sensitive for their names or for their phrases? (Case sensitive means different answers are returned depending on capitalization).
 
-
-### Question 6
+### Question 6 (1 point)
 As stated at the start of this document and in the course policies, you should record via Zoom the first 20 minutes of you working at the beginning of this project and submit a link to that recording using [the link https://duke.is/zoom-p0-fall24](https://duke.is/zoom-p0-fall24). In your analysis document, include as an answer to this last question an affirmation "Yes, I submitted the URL for a Zoom recording." -- if, in fact, you did. Otherwise indicate you forgot to/refused to.
 
 ## Grading
@@ -161,6 +161,6 @@ Your submission will be graded by the following chart:
 | ------ | ------ |
 | Modify Person201 | 6 |
 | Modify Person201Demo | 6 |
-| Create Person201Closest | 6 |
-| Zoom recording | 2 |
-| Analysis | 5 |
+| Modify CountEateries | 6 |
+| Create Person201Farthest | 6 |
+| Analysis | 8 |

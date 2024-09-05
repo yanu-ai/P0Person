@@ -91,11 +91,11 @@ The `main` method you write *must* use the code below
 ```
 public static void main(String[] args) throws Exception {
         String file = "data/foodlarge.txt";
-        double min = 0;
+        double max = 0;
         Person201 a = null;
         Person201 b = null;
         // TODO: finish this method 
-        System.out.printf("farthest distance is %3.2f between %s and %s\n",min,a.name(),b.name());
+        System.out.printf("farthest distance is %3.2f between %s and %s\n",max,a.name(),b.name());
     }
 ```
 See [the details](docs/details.md) documentation for details/hints.

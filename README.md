@@ -19,7 +19,7 @@ For this project and every APT quiz, we ask that record your screen via Zoom. Fo
 
 ## Initial Engagement Points
 
-You can earn five **early-project engagement** points for this project.
+You can earn five **early-project engagement** points for this project. You must complete a task before end-of-day Monday to earn the points.
 
 * Answer the questions on the [pre-project engagement form](https://bit.ly/p0-pre-engage) (2 points)
 * Modify the definition of `Person p` in the file `PostPerson.java` to represent you, and run the program to post the information for the class to use. (3 points)

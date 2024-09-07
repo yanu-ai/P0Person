@@ -17,7 +17,7 @@ public class Person201 {
     public Person201() {
         this.name = "Owen";
         this.latitude = 35.99;
-        this.longitude = 78.898;
+        this.longitude = 78.9;
         this.eatery = "Dain's Place";
     }
 

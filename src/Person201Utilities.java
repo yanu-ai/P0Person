@@ -1,6 +1,6 @@
 import java.io.*;
-import java.util.*;
 import java.net.*;
+import java.util.*;
 
 /**
  * Utilities for processing data for the Person201 record/class
@@ -58,7 +58,7 @@ public class Person201Utilities {
      */
     public static Person201[] readFile(String fname) throws IOException {
         Scanner s = new Scanner(new File(fname));
-        Person201[] result = readFromScanner(s);
+        Person201[] result = readFromScanner(s); 
         s.close();
         return result;
     }

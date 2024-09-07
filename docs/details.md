@@ -27,7 +27,7 @@ In the `Person201` class, the four instance variables are named explicitly in th
 
 You will need to add a default/no-parameter constructor to the `Person201` class. Based on the instructions, the body of this constructor will be as shown below. The use of `this(x,y,z,w)` is an implicit call of the constructor for `Person201` that has parameters.
 ```
-    this("Owen", 35.99, 79.9, "Dain's Place");
+    this("Owen", 35.99, 78.9, "Dain's Place");
 ```
 
 ### Interlude: Understanding Multi-file Programs 

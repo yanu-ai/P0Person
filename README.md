@@ -118,7 +118,7 @@ total = 97
 
 Before you submit to Gradescope, check that you've done each of the following:
 
-- Modify `Person201.java` by changing code in two places.
+- Modify `Person201.java` by changing code in one places (default constructor).
 - Verify that running `Person201Demo.java` matches the expected output after modifying `Person201.java`
 - Add a new `Person201` object in the `Person201Demo.java` program and verify that running `Person201Demo.java` matches the expected output.
 - Run `Person201Nearby.java` , find threshold values as indicated, and verify that reading a file and the corresponding URL produce the same results.

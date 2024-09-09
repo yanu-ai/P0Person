@@ -14,13 +14,19 @@ public class Person201 {
     private double longitude; // W is -, E is +
     private String eatery;    // on ninth street
 
+    public Person201() {
+        this.name = "Owen";
+        this.latitude = 35.99;
+        this.longitude = 78.9;
+        this.eatery = "Dain's Place";
+    }
+
     public Person201(String name, double latitude, double longitude, String eatery) {
         this.name = name;
         this.latitude = latitude;
         this.longitude = longitude;
         this.eatery = eatery;
     }
-
     // getters
     public String name(){
         return name;

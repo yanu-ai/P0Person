@@ -3,10 +3,10 @@ public class Person201Demo {
         Person201 a = new Person201("claire",37.8044,-122.2712,"Blue Corn Cafe");
         Person201 b = new Person201("ricardo",-1.2921, 36.8219,"Elmo's Diner");
         Person201 c = new Person201("julie",40.7081,-73.9571,"Alpaca");
+        Person201 s = new Person201("Ethan", 40.6782, 73.0442, "Monuts");
+        Person201[] datas = {a,b,c,s};
 
-        Person201[] data = {a,b,c};
-
-        for(Person201 p : data) {
+        for(Person201 p : datas) {
             System.out.println(p);
         }
 

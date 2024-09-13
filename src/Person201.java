@@ -21,6 +21,13 @@ public class Person201 {
         this.eatery = eatery;
     }
 
+    public Person201() {
+        this.name = "Owen";
+        this.latitude = 035.99;
+        this.longitude = 078.90;
+        this.eatery = "Dain's Place";
+    }
+
     // getters
     public String name(){
         return name;

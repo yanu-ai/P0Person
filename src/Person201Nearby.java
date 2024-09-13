@@ -8,14 +8,14 @@ public class Person201Nearby {
     public static void main(String[] args) throws Exception {
         Person201 query = new Person201("Ricardo",46.9994, -122.3921,"Juju");
 
-        String largeFileName = "data/foodlarge.txt";
-        String smallFileName = "data/foodsmall.txt";
+       // String largeFileName = "data/foodlarge.txt";
+       // String smallFileName = "data/foodsmall.txt";
         String largeURL = "https://courses.cs.duke.edu/fall24/compsci201/data/foodlarge.txt";
-        Person201[] people = Person201Utilities.readFile(largeFileName);
+        Person201[] people = Person201Utilities.readURL(largeURL);
 
         System.out.println("distance\tperson");
         int total = 0;
-        int threshold = 20;
+        int threshold = 17;
         for (Person201 p : people) {
             double d = Person201Utilities.distance(query, p);   
             if (d < threshold) {
